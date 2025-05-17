@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t my-image .
+docker build --platform=amd64 -t my-image .
