@@ -5,9 +5,8 @@ services:
     environment:
       - JIMAO=1
     ports:
-      - "9091:9091"
-      - "8091:8091"
+      - "42800-42900:42800-42900"
     volumes:
-      - /Users/jimao/github/my-docker-nodejs:/root/server
+      - ./:/root/server
     command: node ./index.js
     restart: unless-stopped
