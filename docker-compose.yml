@@ -7,5 +7,7 @@ services:
     ports:
       - "9091:9091"
       - "8091:8091"
+    volumes:
+      - /Users/jimao/github/my-docker-nodejs:/root/server
     command: node ./index.js
     restart: unless-stopped
