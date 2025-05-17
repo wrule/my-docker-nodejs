@@ -13,3 +13,5 @@ RUN apt update && apt install -y \
 WORKDIR /root/test
 
 COPY --chown=root:root [".", "."]
+
+RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
