@@ -14,6 +14,6 @@ RUN npm install -g pm2 serve
 
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
-WORKDIR /root/test
+WORKDIR /root/server
 
 COPY --chown=root:root [".", "."]
