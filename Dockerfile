@@ -10,6 +10,8 @@ RUN apt update && apt install -y \
   && apt clean \
   && rm -rf /var/lib/apt/lists/*
 
+RUN npm install -g pm2 serve
+
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 WORKDIR /root/test
